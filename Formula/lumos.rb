@@ -11,9 +11,11 @@ class Lumos < Formula
     # Install CLI entrypoint
     bin.install "bin/lumos"
 
-    # Install to share/lumos so the binary can find it via relative path
-    # The lumos binary expects: {parent_of_bin}/share/lumos/src/toolchains/...
-    (share/"lumos").install Dir["share/lumos/*"]
+    # Install to share/lumos so the binary can find it via relative path.
+    # The release tarball has share/boards and share/toolchains directly
+    # (no share/lumos/ nesting) - the lumos binary itself expects
+    # {parent_of_bin}/share/lumos/{boards,toolchains}/...
+    (share/"lumos").install Dir["share/*"]
   end
 
   test do
