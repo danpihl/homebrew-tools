@@ -1,10 +1,10 @@
 class Lumos < Formula
   desc "Lumos command-line tool"
-  homepage "https://github.com/LumosRobotics/LumosTool"
+  homepage "https://github.com/danpihl/LumosTool"
   version "1.0.0"
 
-  url "https://github.com/LumosRobotics/LumosTool/releases/download/v1.0.0/lumos-macos-1.0.0.tar.gz"
-  sha256 "df78b50274605adc444710f6f356adc4e789868540e955785352cfd6c4712681"
+  url "https://github.com/danpihl/LumosTool/releases/download/v1.0.0/lumos-macos-1.0.0.tar.gz"
+  sha256 "48d1ed01a9af91b381cec8b1b10530024fe7a4d5adfe793fcd687bb58f01e96d"
   license "MIT"
 
   def install
